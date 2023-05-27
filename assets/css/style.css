@@ -1,3 +1,46 @@
-#subheader{
-    background-image: url("./images/background-image.jpg");
+header{
+    display:flex;
+    flex-direction: row;
+    background-image: url("./images/header-image.jpg");
+    background-size: 100%;
+    height: 100px;
+    width: 100%;
+    color: white;
+    justify-content: right;
+    align-items: center;
 }
+
+nav{
+    justify-content: flex-end;
+    font-size: 30px;
+    color: white;
+}
+
+span{
+    position: relative;
+    margin: 0;
+    font-size: 60px;
+    justify-content: left;
+}
+
+#subheader{
+    display: flex;
+    background-image: url("./images/background-image.jpg");
+    width: 100%;
+    height: 40px;
+    justify-content: right;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
