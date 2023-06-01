@@ -34,7 +34,7 @@ body{
 
 header{
     display: flex;
-    background-image: url("./images/header-image.jpg");
+    background-color: #001F39;
     background-size: 100%;
     height: 170px;
     width: 100%;
@@ -78,7 +78,7 @@ header{
 
 #subheader{  /*mostly done */
     display: flex;
-    background-image: url("./images/background-image.jpg");
+    background-image: url("./images/header-image-2.jpg");
     font-size: 20px;
     width: 100%;
     height: 100px;
@@ -95,64 +95,49 @@ header{
 /*______________________________________________________________________________*/
 /* Main Content Bellow*/
 
-#mainRow{
-    flex-wrap: nowrap;
-}
-
-.card{
+.mainRow{
     display: flex;
-    background-color: var(--card-color);
-    margin: 5px;
-    flex-grow: 1;
-}
-
-#firstCard{
-    flex-grow: 2;
+    flex: 1 1;
 }
 
 .leftCol{
-    width: 30%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: flex-end;
     padding: 10px;
     justify-content: center;
+    flex: 1;
+    border-right: solid 3px var(--textColor);
 }
 
 .rightCol{
-    width: 70%;
     flex-wrap: wrap;
     align-items: flex-start;
     padding: 10px;
     justify-content: center;
-    flex:1;
+    flex:3;
 }
 
 p{
+    display: flex;
     padding-left: 100px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .aboutMe{
     height: var(--aboutMeHeight);
     padding: 0 10px 0 0;
     margin: 0 0 var(--specialMargin) 0;
-    flex-wrap: wrap;
-}
-
-.leftCol .aboutMe {
-    border-right: solid 5px;
-    /* height: calc(var(--aboutMeHeight) + var(--specialMargin)); */
+    flex-wrap: nowrap;
 }
 
 .work{
     height: var(--workHeight);
-    padding-right: 10px;
-    width: 100%;
+    padding: 0 10px 0 0;
     justify-content: end;
-
-}
-
-.leftCol .work{
-    border-right: solid 5px;
+    flex-wrap: nowrap;
 }
 
 .rightCol .work{
@@ -161,16 +146,24 @@ p{
 
 .card{
     display:flex;
+    flex-wrap: wrap;
+    margin: 5px;
     flex: 1;
     border: solid 3px #2C3C4A;
     height: 50px;
     align-items: center;
     justify-content: flex-start;
-    background-image: url("./images/background-image.jpg");
+    background-image: url("./images/placeholder.png");
     background-color: grey;
     opacity: 0.5;
 }
 
+#firstCard{
+    flex-wrap: wrap;
+    flex: 1;
+    flex-basis: 100%;
+    height: 120px;
+}
 
 .card:hover{
     opacity: 1;
@@ -183,13 +176,6 @@ p{
     flex-shrink: 0;
     padding-left: 10px;
     font-size: 30px;
-}
-
-#firstCard{
-    flex-wrap: wrap;
-    flex: 2;
-    flex-basis: 100%;
-    height: 80px;
 }
 
 .contact{
