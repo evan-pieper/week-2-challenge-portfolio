@@ -231,7 +231,6 @@ p{
         --workHeight: 1100px;
         --contactHeight: 300px;
         --textColor: #105B9B;
-        --specialMargin: 50px;
         display: flex;
     }
     body{
@@ -364,6 +363,7 @@ p{
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin: 0;
     }
     
     .aboutMe{
