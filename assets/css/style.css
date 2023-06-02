@@ -25,11 +25,6 @@ body{
     flex-direction: column;
 }
 
-#break {
-    flex-basis: 100%;
-    height: 0;
-}
-
 section{
     flex: 1;
     display: flex;
@@ -113,7 +108,7 @@ header{
 
 .mainRow{
     display: flex;
-    flex: 1 1;
+    flex: 1;
 }
 
 .leftCol{
@@ -249,17 +244,11 @@ p{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        width: 100%;
       }
     
     .col {
         display: flex;
         flex-direction: column;
-    }
-    
-    #break {
-        flex-basis: 100%;
-        height: 0;
     }
     
     section{
